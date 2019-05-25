@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>avtosvit</title>
+    <style>
+   #title {
+    line-height: 0;
+   }
+   #title img {
+    border: none; 
+   }
+  </style>
+  <script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</head>
+    <body>
+        <header>
+            <div class="menu">
+            <nav>
+                 <ul>
+                    <li><a href="index.html"><b><i>ГОЛОВНА</i></b></a></li>
+                    <li><a href="aboutus.html"><b><i>ПРО НАС</i></b></a></li>
+                    <li><a href="gallery.html"><b><i>ГАЛАРЕЯ</i></b></a></li>
+                    <li><a href="form.html"><b><i>КОНТАКТИ</i></b></a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#"><img class="logo" src="img/title.jpg" alt="Compani name" /></a>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.555910608062!2d24.02440598404285!3d49.84403428814912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add72f9bc6a89%3A0xf9783fecb4fecf1f!2z0JvRjNCy0ZbQstGB0YzQutC40Lkg0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INCQ0LrQsNC00LXQvNGW0YfQvdC40Lkg0YLQtdCw0YLRgCDQvtC_0LXRgNC4INGC0LAg0LHQsNC70LXRgtGDINGW0LwuINCh0L7Qu9C-0LzRltGXINCa0YDRg9GI0LXQu9GM0L3QuNGG0YzQutC-0Zc!5e0!3m2!1suk!2sua!4v1558748783806!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </header>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <footer>
+            <p>avtosvit @</p>
+        </footer>
+    </body>
+</html>

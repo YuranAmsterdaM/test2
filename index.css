@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300|Oswald&display=swap');
+:root {
+    --main-color: #3a6b3f;
+    --highlight-color: #a38d7a;
+    --background-color:#ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+    max-width: 1080px;
+    min-width: 350px;
+}
+header .top-row .logo {
+    color: #725339;
+    font-family: 'Amati CS', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+header .top-row .menu ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+header .top-row .menu ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid var(--background-color);
+}
+header .top-row .menu ul li a:hover {
+    border: 1px solid var(--highlight-color);
+}
+@media (min-width: 750px) {
+    header .top-row {
+        display: flex;
+    }
+    header .top-row .menu {
+        flex: 1;
+    }
+}
